@@ -169,7 +169,7 @@ img {
   /* animation---------------------------- */
   @keyframes slideintop{
     from{
-        transform: translateY(-500px);
+        transform: translateY(-400px);
     }
     to{
         transform: translateY(0);
