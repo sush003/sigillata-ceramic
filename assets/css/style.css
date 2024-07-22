@@ -52,8 +52,15 @@ img {
 /* NAVBAR */
 .navbar-nav{
     background-color: #fdfcfd;
+    animation-name:slideinright ;
+    animation-duration: 1s;
+    /* position: fixed; */
 }
+.navbar-full{
+    position: fixed;
+    /* max-width: fit-cont; */
 
+}
 
 .navbar-nav .nav-link {
   font-weight: 400;
@@ -111,6 +118,7 @@ img {
     animation-name: slideintop ;
     animation-duration: 1s;
     animation-iteration-count:1 ;
+    /* animation-delay: 1s; */
 }
 
 /* bestsellery-------------------- */
@@ -170,6 +178,14 @@ img {
   @keyframes slideintop{
     from{
         transform: translateY(-400px);
+    }
+    to{
+        transform: translateY(0);
+    }
+  }
+  @keyframes slideinright{
+    from{
+        transform: translateX(300px);
     }
     to{
         transform: translateY(0);
