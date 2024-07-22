@@ -1,0 +1,185 @@
+@import url(../css/chillax.css);
+
+:root {
+  --c-dark: #924b4a;
+  --c-light: #a96f6f;
+  --c-font: #333332;
+  --c-body: #fdfcfdcd;
+  --c-brand-rgb:146, 75, 74;
+  --fontbase: "chillax", "sans-serif";
+  --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
+  --transition: all 0.5s ease;
+}
+
+body {
+  font-family: var(--fontbase);
+  line-height: 1.7;
+  /* color: var(--c-body); */
+}
+h1,h2,h3,h4,h5,h6,
+.h1,.h2.h3.h4.h5.h6 {
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+  color: var(--c-dark);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--c-dark);
+}
+
+.img_shop {
+  max-width: 15%;
+  color: var(--c-dark);
+}
+
+.img_shop:hover {
+  color: var(--c-dark);
+}
+
+img {
+  max-width: 25%;
+  height: auto;
+}
+
+.section-padding {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+/* NAVBAR */
+.navbar-nav{
+    background-color: #fdfcfd;
+}
+
+
+.navbar-nav .nav-link {
+  font-weight: 400;
+  color: var(--c-font);
+  /* background-color: #09e735; */
+}
+
+.nav-link:hover{
+    color: var(--c-dark);
+}
+
+.navbar-nav .nav-linl.active {
+  color: var(--c-dark);
+}
+
+.navbar-brand{
+    margin-left: 0;
+
+}
+/* btn */
+/*  */
+.btn {
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.btn:hover{
+    background-color: var(--c-light);
+    color: white;
+}
+
+.btn-brand {
+    background-color: var(--c-dark);
+}
+
+#show-more{
+    font-weight: 500;
+}
+
+.btn-cart
+{
+    /* margin-right: 10px; */
+    margin-left: 100px;
+}
+
+/* -------------heroo-----------------*/
+#hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.442),rgba(0, 0, 0, 0.47)),url(../images/herodemo2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#hero11{
+    animation-name: slideintop ;
+    animation-duration: 2s;
+    animation-iteration-count:1 ;
+}
+
+/* bestsellery-------------------- */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .row{
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+
+  .product {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+   
+  }
+  
+  .product img {
+    max-width: 380px;
+    height: 430px;
+    padding-bottom: 20px;
+    display: inline-block;
+    transition: transform 0.5s;
+    object-fit: cover;
+    align-items:center;
+  }
+
+  .product img:hover{
+    transform: scale(1.04);
+  }
+
+  
+  h2 {
+    margin-top: 0;
+    font-weight: 400;
+  }
+  
+  .price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-weight: 550;
+  }
+  .bestsellery{
+    padding-bottom: 100px;
+  }
+  .bestsellery-line{
+    margin: 0 auto;
+    max-width: 75%;
+  }
+
+  /* animation---------------------------- */
+  @keyframes slideintop{
+    from{
+        transform: translateY(-500px);
+    }
+    to{
+        transform: translateY(0);
+    }
+  }
+  
+
+
+
+
+
+
+  
