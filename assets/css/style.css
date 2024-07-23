@@ -52,8 +52,7 @@ img {
 /* NAVBAR */
 .navbar-nav{
     background-color: #fdfcfd;
-    animation-name:slideinright ;
-    animation-duration: 1s;
+    
     /* position: fixed; */
 }
 .navbar-full{
@@ -115,9 +114,28 @@ img {
     background-size: cover;
 }
 #hero11{
-    animation-name: slideintop ;
-    animation-duration: 1s;
+    animation-name: fadeintop-min ;
+    animation-duration: 2s;
     animation-iteration-count:1 ;
+    /* animation-delay: 1s; */
+}
+#hero22{
+    animation-name: fadeintop-min ;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-iteration-count:1 ;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    /* animation-delay: 1s; */
+}
+#show-more{
+    animation-name: fadeintop-min ;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count:1 ;
+    opacity: 0;
+    animation-fill-mode: forwards;
     /* animation-delay: 1s; */
 }
 
@@ -191,7 +209,17 @@ img {
         transform: translateY(0);
     }
   }
-  
+  @keyframes fadeintop-min{
+    from{
+        /* opacity: 0; */
+        /* animation-delay: 1s; */
+        transform: translateY(15px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
 
 
 
