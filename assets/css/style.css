@@ -49,17 +49,18 @@ img {
   padding-bottom: 140px;
 }
 
-/* NAVBAR */
+/* NAVBAR--------------------------------------------------------------------------------------------------- */
 .navbar-nav{
     background-color: #fdfcfd;
-    
+    position: relative;
+    z-index: 100;
     /* position: fixed; */
 }
-.navbar-full{
-    position: fixed;
+/* .navbar-full{ */
+    /* position: fixed; */
     /* max-width: fit-cont; */
 
-}
+/* } */
 
 .navbar-nav .nav-link {
   font-weight: 400;
@@ -107,16 +108,22 @@ img {
     margin-left: 100px;
 }
 
-/* -------------heroo-----------------*/
+/* -------------heroo----------------------------------------------------------------------------------------------------------------*/
 #hero{
     background: linear-gradient(rgba(0, 0, 0, 0.442),rgba(0, 0, 0, 0.47)),url(../images/herodemo2.jpg);
     background-position: center;
-    background-size: cover;
+    background-size:cover;
+    max-height: max-content;
+    max-width: 100%;
+    animation-name: zoomin;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 #hero11{
     animation-name: fadeintop-min ;
     animation-duration: 2.5s;
     animation-iteration-count:1 ;
+    animation-delay: 1s;
     opacity: 0;
     animation-fill-mode: forwards;
     /* animation-delay: 1s; */
@@ -125,7 +132,7 @@ img {
     animation-name: fadeintop-min ;
     animation-timing-function: ease;
     animation-duration: 2s;
-    animation-delay: 0.5s;
+    animation-delay: 1.5s;
     animation-iteration-count:1 ;
     opacity: 0;
     animation-fill-mode: forwards;
@@ -134,14 +141,14 @@ img {
 #show-more{
     animation-name: fadeintop-min ;
     animation-duration: 2s;
-    animation-delay: 1s;
+    animation-delay: 2s;
     animation-iteration-count:1 ;
     opacity: 0;
     animation-fill-mode: forwards;
     /* animation-delay: 1s; */
 }
 
-/* bestsellery-------------------- */
+/* bestsellery-------------------------------------------------------------------------------------------------------------- */
 .container {
     display: flex;
     flex-direction: row;
@@ -172,6 +179,7 @@ img {
 
   .product img:hover{
     transform: scale(1.04);
+    /* position: ; */
   }
 
   
@@ -185,6 +193,7 @@ img {
     font-weight: bold;
     margin-bottom: 10px;
     font-weight: 550;
+    /* position: fixed; */
   }
   .bestsellery{
     padding-bottom: 100px;
@@ -194,7 +203,7 @@ img {
     max-width: 75%;
   }
 
-  /* animation---------------------------- */
+  /* animation---------------------------------------------------------------------------------------------------------------------- */
   @keyframes slideintop{
     from{
         transform: translateY(-400px);
@@ -220,6 +229,15 @@ img {
     to{
         opacity: 1;
         transform: translateY(0);
+    }
+  }
+  @keyframes zoomin{
+    from{
+        transform: scale(1.1,1.1);
+    }
+    to{
+        transform: scale(1,1);
+
     }
   }
 
