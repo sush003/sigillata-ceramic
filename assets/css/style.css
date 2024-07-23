@@ -115,8 +115,10 @@ img {
 }
 #hero11{
     animation-name: fadeintop-min ;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     animation-iteration-count:1 ;
+    opacity: 0;
+    animation-fill-mode: forwards;
     /* animation-delay: 1s; */
 }
 #hero22{
