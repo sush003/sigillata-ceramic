@@ -180,7 +180,13 @@ img {
     transition: transform 0.5s;
     object-fit: cover;
     align-items:center;
+    
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    padding-bottom: 0px;
   }
+  
 
   .product img:hover{
     transform: scale(1.04);
@@ -189,7 +195,7 @@ img {
 
   
   h2 {
-    margin-top: 0;
+    margin-top: 25px;
     font-weight: 400;
   }
   
@@ -251,7 +257,7 @@ img {
     0%{
         filter: blur(4px);
     }
-    }
+    
     100%{
         filter: blur(0px);
     }
